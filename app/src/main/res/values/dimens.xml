@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cat_margin_5">5dp</dimen>
+    <dimen name="cat_margin_8">8dp</dimen>
+    <dimen name="cat_margin_12">12dp</dimen>
+    <dimen name="cat_margin_16">16dp</dimen>
+    <dimen name="cat_margin_18">18dp</dimen>
+    <dimen name="cat_margin_20">20dp</dimen>
+    <dimen name="cat_margin_34">34dp</dimen>
+    <dimen name="cat_margin_40">40dp</dimen>
+    <dimen name="cat_margin_50">50dp</dimen>
+    <dimen name="cat_margin_60">60dp</dimen>
+    <dimen name="cat_margin_85">85dp</dimen>
+    <dimen name="cat_margin_90">90dp</dimen>
+    <dimen name="cat_size_18">18sp</dimen>
+    <dimen name="cat_size_15">15sp</dimen>
+    <dimen name="cat_size_20">20sp</dimen>
+    <dimen name="cat_size_25">25sp</dimen>
+
+    <dimen name="cat_home_image_margin_top">60dp</dimen>
+    <dimen name="cat_home_title_margin_top">10dp</dimen>
+    <dimen name="cat_home_slogan_margin_top">38dp</dimen>
+    <dimen name="cat_home_title_size">54sp</dimen>
+    <dimen name="cat_home_slogan_size">18sp</dimen>
+    <dimen name="cat_home_button_text_size">18sp</dimen>
+    <dimen name="cat_fact_text_size">14sp</dimen>
+
+    <dimen name="cat_menu_instruction_margin_top">34dp</dimen>
+    <dimen name="cat_menu_instruction_text_size">20sp</dimen>
+    <dimen name="cat_menu_fact_text_size">20sp</dimen>
+    <dimen name="cat_menu_bread_text_size">20sp</dimen>
+</resources>

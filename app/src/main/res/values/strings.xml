@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CatFact</string>
+    <string name="cat_fact_title">Cat Facts</string>
+    <string name="cat_breed_title">Cat Breeds</string>
+    <string name="cat_fact_slogan">Learn and love more about your cats.</string>
+    <string name="cat_fact_lets_go">Lets go!</string>
+    <string name="cat_breed_text_example">Autralian Mist</string>
+    <string name="cat_fact_text_example">Lorem ipsum dolor sit amet, consectetur adipisicing elit.\nLorem ipsum dolor sit amet, consectetur adipisicing elit</string>
+    <string name="cat_menu_fact_instruction">Select an option</string>
+    <string name="cat_menu_fact_description">Know amazing and interesting facts about cats that probably you did not know.</string>
+    <string name="cat_menu_breed_description">Know the most common cat breeds.</string>
+    <string name="cat_breed_description_country_label">Country</string>
+    <string name="cat_breed_description_origin_label">Origin</string>
+    <string name="cat_breed_description_coat_label">Coat</string>
+    <string name="cat_breed_description_pattern_label">Patter</string>
+    <string name="cat_breed_description_title_text_example">Abbision</string>
+    <string name="cat_breed_description_country_text_example">Ethiopia</string>
+    <string name="cat_breed_description_coat_text_example">Short</string>
+    <string name="cat_breed_description_origin_text_example">Natural/Standar</string>
+    <string name="cat_breed_description_pattern_text_example">Ticked</string>
+
+</resources>

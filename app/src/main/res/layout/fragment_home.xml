@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.view.fragment.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/cat_margin_16"
+        android:layout_marginEnd="@dimen/cat_margin_16">
+
+        <ImageView
+            android:id="@+id/catHomeFaceImageView"
+            android:layout_width="203dp"
+            android:layout_height="207dp"
+            android:layout_marginTop="@dimen/cat_home_image_margin_top"
+            android:src="@drawable/ic_cat_sleepy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/catHomeTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cat_home_title_margin_top"
+            android:text="@string/cat_fact_title"
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/cat_home_title_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/catHomeFaceImageView" />
+
+        <TextView
+            android:id="@+id/catHomeSloganTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cat_home_slogan_margin_top"
+            android:text="@string/cat_fact_slogan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/cat_home_slogan_size"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/catHomeTitleTextView" />
+
+        <ImageView
+            android:id="@+id/catHomeFootPrintImageView"
+            android:layout_width="134dp"
+            android:layout_height="175dp"
+            android:src="@drawable/ic_cat_footprint"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/catHomeSloganTextView"
+            app:layout_constraintVertical_bias="0.196" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/cat_home_button_text_size"
+            android:text="@string/cat_fact_lets_go"
+            android:textColor="@color/melon"
+            app:layout_constraintBottom_toBottomOf="@+id/catHomeFootPrintImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

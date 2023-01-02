@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.arhelicortes.catfact_dagger.presentation.view.fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.arhelicortes.catfact_dagger.presentation.view.fragment.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_factListFragment"
+            app:destination="@id/factListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_breadListFragment"
+            app:destination="@id/breadListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/factListFragment"
+        android:name="com.arhelicortes.catfact_dagger.presentation.view.fragment.FactListFragment"
+        android:label="FactListFragment" />
+    <fragment
+        android:id="@+id/breadListFragment"
+        android:name="com.arhelicortes.catfact_dagger.presentation.view.fragment.BreedListFragment"
+        android:label="BreadListFragment" >
+        <action
+            android:id="@+id/action_breadListFragment_to_breadDescriptionFragment"
+            app:destination="@id/breadDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/breadDescriptionFragment"
+        android:name="com.arhelicortes.catfact_dagger.presentation.view.fragment.BreedDescriptionFragment"
+        android:label="fragment_bread_description"
+        tools:layout="@layout/fragment_bread_description" >
+        <argument
+            android:name="catBreedDescription"
+            app:argType="com.arhelicortes.catfact_dagger.domain.model.bread.CatBreedDataDto" />
+    </fragment>
+</navigation>
