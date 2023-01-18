@@ -5,9 +5,7 @@ import com.arhelicortes.catfact_dagger.data.service.CatBreadService
 import com.arhelicortes.catfact_dagger.domain.datasource.CatBreadDataSource
 import io.reactivex.rxjava3.core.Single
 import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
 class CatBreedNetworkDataSource @Inject constructor(
     private val catBreadService: CatBreadService,
 ): CatBreadDataSource {

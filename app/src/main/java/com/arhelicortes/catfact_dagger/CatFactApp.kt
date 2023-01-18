@@ -1,7 +1,11 @@
 package com.arhelicortes.catfact_dagger
 
 import android.app.Application
-import dagger.hilt.android.HiltAndroidApp
+import com.arhelicortes.catfact_dagger.di.AppComponent
+import com.arhelicortes.catfact_dagger.di.DaggerAppComponent
 
-@HiltAndroidApp
-open class CatFactApp: Application()
+class CatFactApp: Application() {
+    val appComponent: AppComponent by lazy {
+        DaggerAppComponent.factory().create()
+    }
+}

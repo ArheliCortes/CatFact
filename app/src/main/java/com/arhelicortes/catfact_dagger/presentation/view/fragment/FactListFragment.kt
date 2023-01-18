@@ -11,16 +11,11 @@ import com.arhelicortes.catfact_dagger.databinding.FragmentFactListBinding
 import com.arhelicortes.catfact_dagger.domain.model.fact.CatFactDataDto
 import com.arhelicortes.catfact_dagger.presentation.contract.CatFactContract
 import com.arhelicortes.catfact_dagger.presentation.view.adapter.CatFactCustomAdapter
-import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
-@AndroidEntryPoint
 class FactListFragment: Fragment(), CatFactContract.View {
     private lateinit var binding: FragmentFactListBinding
 
-
-    @Inject
-    lateinit var presenter: CatFactContract.Presenter
+    private lateinit var presenter: CatFactContract.Presenter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

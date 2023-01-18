@@ -8,9 +8,7 @@ import com.arhelicortes.catfact_dagger.domain.model.bread.CatBreadDto
 import com.arhelicortes.catfact_dagger.domain.model.CatLinkDto
 import com.arhelicortes.catfact_dagger.domain.util.EntityMapper
 import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
 class CatBreedMapper @Inject constructor(
     private val dataBreadMapper: EntityMapper<CatBreadDataEntity, CatBreedDataDto>,
     private val linkBreadMapper: EntityMapper<CatLinkEntity, CatLinkDto>,

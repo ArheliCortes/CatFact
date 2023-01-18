@@ -1,4 +1,4 @@
-package com.arhelicortes.catfact_dagger.data.di.module
+package com.arhelicortes.catfact_dagger.di
 
 import com.arhelicortes.catfact_dagger.data.mapper.CatLinkMapper
 import com.arhelicortes.catfact_dagger.data.mapper.breed.CatBreedDataMapper
@@ -18,39 +18,30 @@ import com.arhelicortes.catfact_dagger.domain.model.fact.CatFactDto
 import com.arhelicortes.catfact_dagger.domain.util.EntityMapper
 import dagger.Module
 import dagger.Provides
-import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
-import javax.inject.Singleton
 
 @Module
-@InstallIn(SingletonComponent::class)
-object MapperProvideModule {
+object MapperModule {
     @Provides
-    @Singleton
     fun provideCatBreedMapper(
         catBreedDataMapper: CatBreedDataMapper,
-        catLinkMapper: CatLinkMapper,
-    ): EntityMapper<CatBreadResponse, CatBreadDto> =
+        catLinkMapper: CatLinkMapper
+    ) : EntityMapper<CatBreadResponse, CatBreadDto> =
         CatBreedMapper(catBreedDataMapper, catLinkMapper)
 
     @Provides
-    @Singleton
     fun provideCatFactMapper(
         catFactDataMapper: CatFactDataMapper,
         catLinkMapper: CatLinkMapper,
     ): EntityMapper<CatFactResponse, CatFactDto> =
         CatFactMapper(catFactDataMapper, catLinkMapper)
 
-
     @Provides
-    @Singleton
     fun provideCatLinkMapper(): EntityMapper<CatLinkEntity, CatLinkDto> = CatLinkMapper()
 
     @Provides
-    @Singleton
     fun provideCatBreedDataMapper(): EntityMapper<CatBreadDataEntity, CatBreedDataDto> = CatBreedDataMapper()
 
     @Provides
-    @Singleton
     fun provideCatFactDataMapper(): EntityMapper<CatFactDataEntity, CatFactDataDto> = CatFactDataMapper()
+
 }

@@ -7,9 +7,7 @@ import com.arhelicortes.catfact_dagger.domain.repository.CatBreedRepository
 import com.arhelicortes.catfact_dagger.domain.util.EntityMapper
 import io.reactivex.rxjava3.core.Single
 import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
 class CatBreedDataRepository @Inject constructor(
     private val catBreadNetworkDataSource: CatBreadDataSource,
     private val catBreadMapper: EntityMapper<CatBreadResponse, CatBreadDto>,

@@ -8,7 +8,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class CatFactNetworkDataSource @Inject constructor(
+class CatFactNetworkDataSource(
     private val catFactService: CatFactService,
 ): CatFactDataSource {
     override fun getCatFacts(): Single<CatFactResponse> {
