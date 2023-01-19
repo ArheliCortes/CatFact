@@ -2,6 +2,7 @@ package com.arhelicortes.catfact_dagger.di
 
 import androidx.lifecycle.ViewModel
 import com.arhelicortes.catfact_dagger.presentation.viewmodel.CatBreedViewModel
+import com.arhelicortes.catfact_dagger.presentation.viewmodel.CatFactViewModel
 import dagger.Binds
 import dagger.MapKey
 import dagger.Module
@@ -19,4 +20,9 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(CatBreedViewModel::class)
     abstract fun bindCatBreedViewModel(viewModel: CatBreedViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(CatFactViewModel::class)
+    abstract fun bindCatFactViewModel(viewModel: CatFactViewModel): ViewModel
 }

@@ -11,7 +11,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class CatFactMapper(
+class CatFactMapper @Inject constructor(
     private val factDataMapper: EntityMapper<CatFactDataEntity, CatFactDataDto>,
     private val linkBreadMapper: EntityMapper<CatLinkEntity, CatLinkDto>,
 ): EntityMapper<CatFactResponse, CatFactDto>() {

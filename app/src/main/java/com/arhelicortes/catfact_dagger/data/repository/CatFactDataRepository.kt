@@ -6,8 +6,9 @@ import com.arhelicortes.catfact_dagger.domain.model.fact.CatFactDto
 import com.arhelicortes.catfact_dagger.domain.repository.CatFactRepository
 import com.arhelicortes.catfact_dagger.domain.util.EntityMapper
 import io.reactivex.rxjava3.core.Single
+import javax.inject.Inject
 
-class CatFactDataRepository(
+class CatFactDataRepository @Inject constructor(
     private val catFactNetworkData: CatFactDataSource,
     private val catFactMapper: EntityMapper<CatFactResponse, CatFactDto>
 ): CatFactRepository {

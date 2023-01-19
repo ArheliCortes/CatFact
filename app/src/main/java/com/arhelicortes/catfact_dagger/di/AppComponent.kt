@@ -10,10 +10,10 @@ import javax.inject.Singleton
 @Component(
     modules = [
         CatBreedModule::class,
+        CatFactModule::class,
         MapperModule::class,
         NetworkModule::class,
         RxJavaModule::class,
-        FragmentModule::class,
         ViewModelModule::class,
         ViewModelFactoryModule::class
     ]
